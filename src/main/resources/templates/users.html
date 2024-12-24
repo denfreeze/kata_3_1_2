@@ -10,7 +10,18 @@
             padding: 5px 10px;
             font-size: 14px;
             color: white;
-            background-color: #007BFF;
+            background-color: #5e9c7f;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button_delete {
+            display: inline-block;
+            padding: 5px 10px;
+            font-size: 14px;
+            color: white;
+            background-color: #ff0000;
             border: none;
             border-radius: 5px;
             text-decoration: none;
@@ -37,7 +48,7 @@
         <td th:text="${user.email}"></td>
         <td>
             <a th:href="@{/admin/edit(id=${user.id})}" class="button">Update</a>
-            <a th:href="@{/admin/delete(id=${user.id})}" class="button">Delete</a>
+            <a th:href="@{/admin/delete(id=${user.id})}" class="button_delete">Delete</a>
         </td>
     </tr>
     </tbody>
